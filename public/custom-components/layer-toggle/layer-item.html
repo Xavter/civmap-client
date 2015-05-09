@@ -1,7 +1,7 @@
 <link rel="import" href="../../components/paper-checkbox/paper-checkbox.html">
 <link rel="import" href="../../components/paper-radio-button/paper-radio-button.html">
 
-<polymer-element name="layer-item" attributes="name enabled checked exclusive" horizontal center layout>
+<polymer-element name="layer-item" attributes="name enabled checked toggleable exclusive" horizontal center layout>
 <template>
   <style>
   :host {
@@ -32,6 +32,7 @@
        * @type boolean
        * @default false
        */
+      toggleable: {value: false, reflect: true},
       checked: {value: false, reflect: true},
       exclusive: {value: false, reflect: true},
     },
