@@ -28,6 +28,14 @@ Polymer('layer-toggle', {
 		        		}
 		        	});
 		        }
+		        if (e.target.checked && e.target.toggleable) {
+		        	
+		        	e.target.parentElement.querySelectorAll('layer-item[toggleable]').array().forEach(function(layer) {
+		        		if (layer !== e.target) {
+		        			layer.checked = false;
+		        		}
+		        	});
+		        }
 			});
 		});
 	}
