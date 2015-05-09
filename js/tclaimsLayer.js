@@ -4,17 +4,17 @@ var pixelProjection = new ol.proj.Projection({
   extent: [-15000, -15000, 15000, 15000]
 });
 
-var url = 'img/claims.svg';
+var url = 'img/tclaims.svg';
 if (window.location.toString().indexOf('svg=') !== -1) {
   url = window.location.toString().split('=')[1];
 }
 
 var layer = new ol.layer.Image({
-  name: 'claims',
+  name: 'tclaims',
   source: new ol.source.ImageStatic({
     attributions: [
       new ol.Attribution({
-        html: 'Claims'
+        html: 'tClaims'
       })
     ],
     url: url,
