@@ -8,7 +8,9 @@ setTimeout(function() {
 
 	require('./lineoutLayer.js').init(map);
 
-	require('./claimsLayer.js').init(map);
+	require('./tclaimsLayer.js').init(map);
+	
+	require('./nclaimsLayer.js').init(map);
 
 	require('./railsLayer.js').init(map);
 
